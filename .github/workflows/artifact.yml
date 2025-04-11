@@ -28,7 +28,7 @@ jobs:
           name: hello-artifact
           path: ./artifacts
       - name: file permission
-        run: chmod +x ./artifacts/hello.txt
+        run: chmod +x ./artifacts
         
       - name: Read files
         run: ./artifacts/hello.txt

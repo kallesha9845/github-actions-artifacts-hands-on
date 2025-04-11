@@ -18,3 +18,12 @@ jobs:
       with:
         name: hello-artifact
         path: hello.txt
+  download:
+     runs-on: ubuntu-latest
+     steps: 
+      - name: Download dragon text files
+        uses: actions/download-artifact@v4
+        with:
+          name: hello-artifact
+      - name: Read files
+        run: cat hello.txt

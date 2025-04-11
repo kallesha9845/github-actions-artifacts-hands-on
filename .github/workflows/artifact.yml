@@ -30,7 +30,9 @@ jobs:
       - name: List files
         run: ls -la ./artifacts
       - name: file permission
-        run: chmod +x ./artifacts
+        run: chmod 777 ./artifacts/hello.txt
+      - name: List files2
+        run: ls -la ./artifacts
         
       - name: Read files
-        run: ./artifacts/hello.txt
+        run: cat ./artifacts/hello.txt

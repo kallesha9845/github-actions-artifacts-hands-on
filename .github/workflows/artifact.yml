@@ -27,12 +27,7 @@ jobs:
         with:
           name: hello-artifact
           path: ./artifacts
-      - name: List files
-        run: ls -la ./artifacts
       - name: file permission
         run: chmod 777 ./artifacts/hello.txt
-      - name: List files2
-        run: ls -la ./artifacts
-        
       - name: Read files
         run: cat ./artifacts/hello.txt
